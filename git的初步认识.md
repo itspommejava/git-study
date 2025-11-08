@@ -1,7 +1,3 @@
-
----
-
-```markdown
 <div align="center">
 
 # 🌿 Git 学习笔记  
@@ -15,63 +11,58 @@
 
 ## 🧩 一、仓库的灵魂：`.git`
 
-> `.git` 是 Git 的「大脑 🧠」，存在于项目根目录中，用于记录所有版本、提交（Commit）与远程仓库（Remote）信息。
-
-```
+> `.git` 是 Git 的「大脑 🧠」，存在于项目根目录中，用于记录所有版本、提交（Commit 提交）与远程仓库（Remote 远程）信息。
 
 D:\java-github\java-study
 │
-├─ .git                ← ⚙️ Git 的隐藏目录（存放版本历史）
+├─ .git ← ⚙️ Git 的隐藏目录（存放版本历史）
 ├─ day
-│  ├─ day1
-│  ├─ day2
-│  └─ README.md
+│ ├─ day1
+│ ├─ day2
+│ └─ README.md
 └─ README.md
 
-```
+yaml
+复制代码
 
-> ⚠️ **不要删除 `.git` 文件夹！**  
-> 否则仓库会“失忆”，GitHub Desktop 将无法识别它。
+⚠️ **不要删除 `.git` 文件夹！**  
+否则仓库会“失忆”，GitHub Desktop 将无法识别它。
 
 ---
 
 ## 🗂️ 二、项目结构推荐
 
-> 每天一个文件夹，笔记独立清晰。
-
-```
+> 每天一个文件夹，笔记独立清晰：
 
 day/
 ├─ day1/
-│   └─ README.md
+│ └─ README.md
 ├─ day2/
-│   └─ README.md
+│ └─ README.md
 └─ ...
 
-```
+yaml
+复制代码
 
 💡 每个 `dayX` 文件夹里放一个 `README.md` 文件，  
-GitHub 打开时会自动显示内容。
+GitHub 打开时会自动展示内容。
 
 ---
 
 ## 📁 三、空文件夹与 `.gitkeep`
 
-> Git 不追踪空文件夹（Empty folder），所以如果你创建了空的 day2 文件夹，是无法 Push（推送）上去的。
+> Git 不追踪空文件夹（Empty folder 空文件夹），所以如果你创建了空的 day2 文件夹，是无法 Push（推送）上去的。
 
 ✅ 解决方法之一：
-```
-
 day2/.gitkeep
 
-```
+复制代码
 
 ✅ 或直接放一个 README 文件：
-```
-
 day2/README.md
 
-```
+yaml
+复制代码
 
 > `.gitkeep` 是一种约定俗成的文件名（只是个空文件），用于“占位”。
 
@@ -86,8 +77,8 @@ day2/README.md
 | 删除 `.git` 文件夹 | 🚫 | 仓库将失效 |
 | 新建 `.git` | ⚠️ | 会变成新的独立仓库，不再关联 GitHub |
 
-> 🪶 小结：  
-> **改名和移动都没关系，只要 `.git` 在，就能继续使用。**
+🪶 **小结：**  
+改名和移动都没关系，只要 `.git` 在，就能继续使用。
 
 ---
 
@@ -117,8 +108,7 @@ day2/README.md
 
 ## 🌸 七、今日收获总结
 
-🪄 关键词：  
-> `.git`、隐藏文件夹、Push（推送）、Commit（提交）、空文件夹、重命名、仓库路径  
+🪄 关键词：`.git`、隐藏文件夹、Push（推送）、Commit（提交）、空文件夹、重命名、仓库路径  
 
 🧠 今日掌握：
 - 明白了 `.git` 是 Git 的核心文件夹  
@@ -131,11 +121,8 @@ day2/README.md
 
 <div align="center">
 
-✨ *「只要 `.git` 在，仓库就在。」*  
+✨ **只要 `.git` 在，仓库就在。**  
 ✍️ *By 芝士苹果派*  
 💬 *“代码与笔记，都是时间的轨迹。”*
 
 </div>
-```
-
----
